@@ -51,8 +51,8 @@ func main() {
 		WindowStartState: options.WindowStartState(bridge.Config.WindowStartState),
 		BackgroundColour: &options.RGBA{R: 255, G: 255, B: 255, A: 1},
 		Windows: &windows.Options{
-			WebviewIsTransparent: true,
-			WindowIsTranslucent:  true,
+			WebviewIsTransparent: false,
+			WindowIsTranslucent:  false,
 			BackdropType:         windows.Acrylic,
 		},
 		Mac: &mac.Options{
